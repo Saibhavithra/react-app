@@ -1,0 +1,26 @@
+import React,{useState} from "react";
+function UserInput(){
+    const [val,setVal]= useState([]);
+    const handleClick=()=>{
+        const abc=[...val,[]]
+        setVal(abc)
+    }
+    const handleChange=(onChangeValue,i)=>{
+        const inputdata=[...val]
+        inputdata[i] =onChangeValue.target.Value;
+        setVal()
+        
+    }
+    return(
+        <>
+        <button onClick={() =>handleClick()}>Click</button>
+        {val.map((data,i)=>{
+            return(
+                <input onChange={e=>handleClick(e,i)}/>
+            )
+        })}
+    </>
+    );
+}
+export default UserInput;
+
