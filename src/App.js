@@ -4,17 +4,32 @@ import MyComponent from './Components/MyComponent';
 import MyClassComponent from './MyClassComponenet';
 //import Checkboc4 from './Components/Checkboc4';
 import Checkboc6 from './Checkboc6';
-function App() {
+
+import { useState } from 'react';
+//import dynamicrender from './Components/Dynamic Render/dynamicrender';
+import DynamicRender from './Components/Dynamic Render/DynamicRender';
+import Login from './Components/Dynamic Render/Login';
+function App() 
+{
+
+ //const[user,setUser] = useState('usera')
+ 
+ 
   return (
-    <div className="App">
-      <header>
+    < div className="App">
+      
+      {/* <DynamicRender user={user}/> */}
+     {/* <button onClick={()=>setUser('usera')}>Switch to User A</button> */}
+      {/* <button onClick={()=>setUser('userb')}>Switch to User B</button> */}
+      <Login/>
          
-          {/* <MyComponent/> */}
-          <Checkboc6/>
-          {/* <MyClassComponent/> */}
-      </header>
+          {/* <MyComponent/>  */}
+            {/* <Checkboc6/>  */}
+         {/* <MyClassComponent/>  */}
+      
     </div>
   );
+  
 }
 
 export default App;
