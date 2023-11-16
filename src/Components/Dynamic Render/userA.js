@@ -1,11 +1,11 @@
 import React from 'react';
 
-function userA(props) {
+function UserA(props) {
     return (
-        <div>
+        <div className='App'>
            <h1>Login Successful</h1> 
         </div>
     );
 }
 
-export default userA;
+export default UserA;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function userB(props) {
+function UserB(props) {
     return (
-        <div>
+        <div className='App'>
             <h1>Login Failed</h1>
         </div>
     );
 }
 
-export default userB;
+export default UserB;
